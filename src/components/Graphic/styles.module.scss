@@ -1,7 +1,6 @@
 .mainContainer{
   display:flex;
-  flex-direction:column;
-  flex-wrap: wrap;
+  flex-direction:column;;
   justify-content: center;
   align-items: center;
 
@@ -18,4 +17,23 @@
     text-decoration: none;
     background: var(--gray-100);
   }
+
+  div {
+    width: 700px;
+  }
+
+  
+  
 }
+
+@media (max-width: 600px){
+  .mainContainer {
+    span {
+      
+    }
+    div {
+      width: 400px;
+    }
+  }
+}
+

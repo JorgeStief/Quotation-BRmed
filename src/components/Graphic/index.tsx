@@ -46,6 +46,16 @@ export function Graphic(props) {
               text: 'taxa de câmbio'
           }
       },
+      responsive: {
+        rules: [{
+          condition: {
+            maxWidth: 500
+          },
+          chartOptions: {
+            legend: {enabled:false}
+          }
+        }]
+      },
       
       legend: {
         align: 'center',
@@ -97,6 +107,8 @@ export function Graphic(props) {
   }
   
   return(
+    <div className={styles.footer}>
+
     <main className={styles.mainContainer}>
        <select  onChange={(e) => setSymbolSelected(e.target.value)} name="symbol" id="">
           {
@@ -107,10 +119,13 @@ export function Graphic(props) {
           }
         </select>
       <div ref={chartComponent} />
+
+     
        
     </main>
-      
     
+      
+    </div>
   );
 }
 
