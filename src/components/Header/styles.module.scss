@@ -6,7 +6,8 @@
   align-items: center;
 
   padding: 2rem 4rem;
-
+  max-width: 1920px;
+  min-width: 720px;
   border-bottom: 1px solid var(--gray-100);
 
   h2 {
@@ -22,4 +23,14 @@
     text-transform: capitalize;
   }
 
+
+
+}
+
+@media (max-width: 768px){
+  .headerContainer {
+    span {
+      display: hidden;
+    }
+  }
 }
