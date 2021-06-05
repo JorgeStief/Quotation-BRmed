@@ -75,7 +75,6 @@ export function Graphic(props) {
       name: symbolSelected,
       data: []
     }
-    let categories = []
     let past = new Date()
     past.setDate(past.getDate() - 7)
     for(let i = 0; i<7; i++){
